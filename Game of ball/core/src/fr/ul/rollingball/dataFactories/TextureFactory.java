@@ -8,8 +8,8 @@ import com.badlogic.gdx.graphics.Texture;
  */
 public class TextureFactory {
 
-    protected static final Texture intro = new Texture(Gdx.files.internal("Intro.jpg"));
-    protected static final Texture decor = new Texture(Gdx.files.internal("Deco.jpg"));
+    private static final Texture intro = new Texture(Gdx.files.internal("images/Intro.jpg"));
+    private static final Texture decor = new Texture(Gdx.files.internal("images/Deco.jpg"));
 
     private static TextureFactory ourInstance = new TextureFactory();
 
