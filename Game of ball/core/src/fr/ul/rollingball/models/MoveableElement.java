@@ -25,11 +25,11 @@ public class MoveableElement extends GameElement {
         return vitesse;
     }
 
-    public void setVitesse(Vector2 vitesse) {
-        this.vitesse = vitesse;
+    public void addVitesse(Vector2 acc) {
+        this.vitesse.add(acc);
     }
 
-    public void majPos(Vector2 vitesse){
+    public void majPos(){
         this.getPos().add(vitesse);
     }
 }

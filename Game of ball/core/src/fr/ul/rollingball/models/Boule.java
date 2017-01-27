@@ -11,7 +11,7 @@ import com.badlogic.gdx.math.Vector2;
 
 public class Boule extends MoveableElement {
 
-    protected static float rayon_defaut = 20;
+    protected static float rayon_defaut = 100;
     protected float rayon;
 
     public Boule(World wld, Vector2 v){
