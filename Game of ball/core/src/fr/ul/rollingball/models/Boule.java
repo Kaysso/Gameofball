@@ -1,9 +1,11 @@
 package fr.ul.rollingball.models;
 
-import com.badlogic.gdx.Gdx;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+
+import fr.ul.rollingball.dataFactories.TextureFactory;
 
 /**
  * Created by mattei4u on 27/01/17.
@@ -20,7 +22,7 @@ public class Boule extends MoveableElement {
     }
 
     public void draw(SpriteBatch sb){
-       sb.draw(new Texture(Gdx.files.internal("images/badlogic.jpg")),getPos().x,getPos().y, rayon, rayon);
+       sb.draw(TextureFactory.getInstance().getBadlogic(), getPos().x,getPos().y, rayon, rayon);
     }
 
 }
