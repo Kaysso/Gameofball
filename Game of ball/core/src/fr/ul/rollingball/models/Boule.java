@@ -13,7 +13,7 @@ import fr.ul.rollingball.dataFactories.TextureFactory;
 
 public class Boule extends MoveableElement {
 
-    protected static float rayon_defaut = 100;
+    protected static float rayon_defaut = 50;
     protected float rayon;
 
     public Boule(World wld, Vector2 v){

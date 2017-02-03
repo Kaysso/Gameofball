@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.g2d.Gdx2DPixmap;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import fr.ul.rollingball.RollingBall;
+import fr.ul.rollingball.dataFactories.SoundFactory;
 import fr.ul.rollingball.dataFactories.TextureFactory;
 
 /**
@@ -25,6 +26,7 @@ public class SplashScreen extends ScreenAdapter {
 
         batch = new SpriteBatch();
         rollball = rb;
+        SoundFactory.getInstance().playVictoire(20);
     }
 
     public void show(){
@@ -40,7 +42,8 @@ public class SplashScreen extends ScreenAdapter {
         batch.begin();
         batch.draw(TextureFactory.getInstance().getIntro(), 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         batch.end();
-        if(duree > 3){
+
+        if(duree > 5){
             rollball.setScreenJeu();
         }
 
